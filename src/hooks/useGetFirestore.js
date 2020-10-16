@@ -16,7 +16,6 @@ export const useGetFirestore = (collection) => {
           id: doc.id,
           ...doc.data(),
         }));
-
         setResponse(arrayData);
       } catch (error) {
         setError(error);
